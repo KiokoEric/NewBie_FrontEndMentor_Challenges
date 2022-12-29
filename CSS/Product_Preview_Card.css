@@ -88,7 +88,7 @@ section p {
     text-decoration: none;
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:375px) {
     article {
         display: flex;
         flex-direction: column;
@@ -103,7 +103,10 @@ section p {
     section:last-child {
         border-radius: 0px 0px 12px 12px;
         width: 360px;
-        height: 415px;
+        height: 41px;
+    }
+    section h1 {
+        margin-bottom: 1rem;
     }
     .price {
         margin-bottom: -0.6rem;
