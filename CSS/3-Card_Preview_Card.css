@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+article {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    padding: 3rem 2.8rem 3.5rem 3rem;
+    width: 350px;
+}
+section:first-child {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 6px 0px 0px 6px;
+}
+section:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+section:last-child {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 6px 6px 0px;
+}
+section figure {
+    margin-bottom: 2rem;
+}
+section h1,p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+section h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+section p {
+    font-size: 15px;
+    line-height: 1.5rem;
+    margin-bottom: 6rem;
+    padding-right: 1.8rem;
+}
+section button {
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    padding: 0.9rem 0.6rem;
+    width: 148px;
+}
+section:first-child button {
+    color: hsl(31, 77%, 52%);
+}
+section:nth-child(2) button {
+    color: hsl(184, 100%, 22%);
+}
+section:last-child button {
+    color: hsl(179, 100%, 13%);;
+}
+
+@media screen and (max-width:375px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    section {
+        margin-top: 0rem;
+    }
+    section:first-child {
+        border-radius: 8px 8px 0px 0px;
+        margin-top: 5rem;
+    }
+    section:last-child {
+        border-radius: 0px 0px 8px 8px;
+        margin-bottom: 5rem;
+    }
+    section p {
+        margin-bottom: 2rem;
+    }
+}
